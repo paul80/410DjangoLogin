@@ -7,9 +7,10 @@ https://docs.djangoproject.com/en/1.7/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
-#Redirect user to login page
-import django.contrib.auth
-django.contrib.auth.LOGIN_URL = '/'
+#Sources:  Simple Login and User Registration Application using Django 
+#https://mayukhsaha.wordpress.com/2013/05/09/simple-login-and-user-registration-application-using-django/
+#
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -23,6 +24,11 @@ TEMPLATE_DIRS= [os.path.join(BASE_DIR, 'templates')]
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 't15#83tm($1^hrj@4j#i(km^nt*o3^gw3t0y^y%v8ne^jhnv7m'
+
+#Redirect user to login page
+import django.contrib.auth
+django.contrib.auth.LOGIN_URL = '/'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
